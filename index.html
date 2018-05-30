@@ -1,15 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Hello World!</h1>
-        <button id="btn">Click me</button>
-    </div>
-    <script src="index.js"></script>
-</body>
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    </head>
+    <body>
+        
+        
+        
+        <div class="container-fluid">
+            <div class = "row justify-content-center">
+                <div class = col-md-8>
+                    <div id = "map">
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class = "row justify-content-center">
+                <div class = col_md-1>
+                    <button id="NHood">Get NHood Names</button>
+                    <button id="Housing">Extremely Low Income</button>
+                    <button id="Nearest">Nearest</button>
+                    <button id="Safety">Safety</button>
+                </div>
+            </div>
+            
+    		<div class="row">
+    			<div class="col-md-6">
+    				<div id="tableWrapper">
+    					<div id="tableScroll">
+    						<table>
+    							<thead>
+    								<tr>
+    									<th colspan="3"> Districts </th>	
+    								</tr>
+    								
+    								<tr>
+    									<th> Name </th>
+    									<th> Point </th>
+    									<th> Boruogh </th>
+    								</tr>
+    								<tbody id="districtsTable">
+    									
+    								</tbody>
+    							</thead>
+    						</table>
+    					</div>
+    				</div>
+    			</div>
+            </div>
+            <div class="row">
+    			<div class="col-md-6">
+    				<div id="tableWrapper">
+    					<div id="tableScroll">
+    						<table>
+    							<thead>
+    								<tr>
+    									<th colspan="3"> Housing with extremely low income</th>	
+    								</tr>
+    								
+    								<tr>
+    									<th> Name </th>
+    									<th> Street </th>
+    									<th> 1 Bethroom Units</th>
+    									<!--<th> Long </th>-->
+    								</tr>
+    								<tbody id="housingTable">
+    									
+    								</tbody>
+    							</thead>
+    						</table>
+    					</div>
+    				</div>
+    			</div>
+            </div>
+        </div>
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkZCxa1TmxTv8BlcZ61dY7K8rHpZam6PA&callback=initMap"
+    async defer></script>
+        <script src="index.js"></script>
+        
+    </body>
+
 </html>
