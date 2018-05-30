@@ -14,3 +14,4 @@
    
    - getNHooNames: In this function I put in a table information about the dataset of neighborhoods.
    
+4. Comentaries: IN every functions, I show in the map what are the districts that are in the top 10 of each parameter.
